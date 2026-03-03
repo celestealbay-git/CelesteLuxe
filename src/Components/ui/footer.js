@@ -21,10 +21,11 @@ export default function Footer() {
         <div className="footer-col links-col">
           <h4>CLIENT SERVICES</h4>
           <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Track Your Order</a></li>
-            <li><a href="#">Shipping & Returns</a></li>
-            <li><a href="#">Authenticity Guarantee</a></li>
+            {/* Pinalitan ang # ng #! para hindi mag-error sa Vercel build */}
+            <li><a href="#!">Contact Us</a></li>
+            <li><a href="#!">Track Your Order</a></li>
+            <li><a href="#!">Shipping & Returns</a></li>
+            <li><a href="#!">Authenticity Guarantee</a></li>
           </ul>
         </div>
 
@@ -42,8 +43,8 @@ export default function Footer() {
       <div className="footer-bottom">
         <p>&copy; 2026 LUXETIME PHILIPPINES. ALL RIGHTS RESERVED.</p>
         <div className="footer-legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
+          <a href="#!">Privacy Policy</a>
+          <a href="#!">Terms of Use</a>
         </div>
       </div>
     </footer>
