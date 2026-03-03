@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+// Tandaan: Huwag isama ang 'src' sa path dahil nandoon na tayo.
+// Siguraduhin na 'HomePage' ang spelling at hindi 'Homepage'
+import Navbar from './App/Main/HomePage/Components/navbar_section';
+import Hero from './App/Main/HomePage/Components/hero';
+import CollectionGrid from './App/Main/HomePage/Components/CollectionGrid';
+import CardList from './App/Main/HomePage/Components/cardlist';
+import DealOfTheWeek from './App/Main/HomePage/Components/deal_of_the_week';
+import Footer from './Components/ui/footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Hero />
+      <CollectionGrid />
+      <CardList />
+      <DealOfTheWeek />
+      <Footer />
     </div>
   );
 }

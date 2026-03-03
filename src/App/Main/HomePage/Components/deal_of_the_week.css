@@ -1,0 +1,107 @@
+/* src/App/Main/HomePage/Components/deal_of_the_week.css */
+.deal-section {
+  padding: 100px 5%;
+  background-color: #ffffff;
+}
+
+.deal-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.deal-content { flex: 1; }
+
+.deal-tag {
+  color: #d4af37;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+}
+
+.deal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+.deal-desc {
+  color: #777;
+  margin-bottom: 40px;
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+/* Countdown Styling */
+.countdown {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.count-box {
+  background: #f8f8f8;
+  width: 80px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.count-num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.count-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+.deal-btn {
+  padding: 16px 40px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.deal-btn:hover { background: #d4af37; }
+
+/* Image Side */
+.deal-image { flex: 1; }
+.image-wrapper { position: relative; }
+.image-wrapper img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.discount-tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #d4af37;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+  .deal-container { flex-direction: column; text-align: center; }
+  .deal-desc { margin: 0 auto 40px; }
+  .countdown { justify-content: center; }
+}

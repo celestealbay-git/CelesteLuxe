@@ -1,0 +1,101 @@
+/* src/Components/ui/footer.css */
+.footer {
+  background: #111111;
+  color: #ffffff;
+  padding: 80px 5% 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-top {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Typography & Content */
+.footer-logo {
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+.footer-logo span { color: #d4af37; }
+
+.brand-story {
+  color: #888;
+  line-height: 1.8;
+  font-size: 0.85rem;
+  max-width: 320px;
+}
+
+.footer-col h4 {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  color: #d4af37;
+}
+
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col li { margin-bottom: 12px; }
+.footer-col a {
+  color: #888;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+.footer-col a:hover { color: #ffffff; padding-left: 5px; }
+
+/* Newsletter Form */
+.subscribe-form {
+  display: flex;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+  margin-top: 20px;
+}
+
+.subscribe-form input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.subscribe-form button {
+  background: transparent;
+  border: none;
+  color: #d4af37;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  max-width: 1400px;
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.footer-legal a {
+  color: #555;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .footer-top { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  .brand-story { margin: 0 auto; }
+  .subscribe-form { justify-content: center; }
+  .footer-bottom { flex-direction: column; gap: 20px; }
+}
